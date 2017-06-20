@@ -1,6 +1,4 @@
-# svg-component
-
-## Objective
+# SVG Component
 
 SVG Component is a CTools component that can be used to change SVG style atributes or text strings, according to values submitted by it's own datasource.
 
