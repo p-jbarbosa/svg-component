@@ -15,21 +15,19 @@ SVG Component is a CTools component that can be used to change SVG style atribut
 
 The strategy implemented followed this steps:
                 
-1. publish the whole SVG content into a DOM element, using the <object>;
-1. after SVG content has been loaded into the DOM, for each record on the datasource result set:
-  1. finds the SVG element that as to be changed, through is own "id" attribute;
-  1. inserts/changes the attribute/text directly on the available SVG element
+1. publish the whole SVG content into a DOM element, using the HTML object tag;
+1. after SVG content has been loaded into the DOM, for each record available on the datasource result set:
+    1. finds the SVG element that has to be changed, through is own "id" attribute;
+    1. inserts/changes the attribute/text directly on the available SVG element
 
 To implement this strategy two rules have to be observed:
 
 * all SVG content must be loaded into the DOM before we start to apply the intended changes;
-* SVG files must be located in the same domain
-  * you can to keep files on ../pentaho/server/pentaho-server/tomcat/webapps/pentaho-style/[images], and access them, via url component property, like /pentaho-style/<image_name>.svg
-  * or directly on PUC folders.
+* SVG files must be located in the same domain.
 
 ## Component Parameters
 
-To get the correct behaviour this component expects to have information from:
+This component expects information from the following parameters:
 
 * URL - the URL to the SVG;
 * Datasource - this will specify the datasource from where the component will get information;
