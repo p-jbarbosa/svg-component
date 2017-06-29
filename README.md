@@ -7,7 +7,7 @@ SVG Component is a CTools component that can be used to change SVG style atribut
 * Developer - Webdetails
 * Version - 1.0
 * Released - n/a
-- Dependencies - CDE, CDF and CDA?
+- Dependencies - CDE, CDF and CDA
 - Licence - MPL 2.0
 - Stage - Unstable and unsupported branch, not recommended for production use.
 
