@@ -13,7 +13,7 @@ SVG Component is a CTools component that can be used to change SVG style atribut
 
 ## Strategy
 
-The strategy implemented followed this steps:
+The strategy implemented followed these steps:
                 
 1. publish the whole SVG content into a DOM element, using the HTML object tag;
 1. after SVG content has been loaded into the DOM, for each record available on the datasource result set:
