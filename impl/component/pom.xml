@@ -4,13 +4,13 @@
     
     <parent>
         <groupId>pt.webdetails</groupId>
-        <artifactId>svg-component-impl-modules</artifactId>
+        <artifactId>component-impl-modules</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>svg-component-impl</artifactId>
+    <artifactId>component-impl</artifactId>
     
-    <name>SVG Component Implementation</name>
+    <name>Component Implementation</name>
  
     <build>
         <resources>

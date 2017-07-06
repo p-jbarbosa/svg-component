@@ -10,7 +10,7 @@
   <fileSets>
     <fileSet>
       <directory>src/main/resources</directory>
-      <outputDirectory>.</outputDirectory>
+      <outputDirectory>${component.name}</outputDirectory>
       <filtered>true</filtered>
     </fileSet>
   </fileSets>
@@ -25,7 +25,7 @@
           <exclude>META-INF/**</exclude>
         </excludes>
       </unpackOptions>
-      <outputDirectory>resources/components/${component.folder}</outputDirectory>
+      <outputDirectory>${component.name}/resources/components/${component.folder}</outputDirectory>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
 

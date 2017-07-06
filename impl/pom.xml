@@ -4,19 +4,19 @@
     
     <parent>
         <groupId>pt.webdetails</groupId>
-        <artifactId>svg-component-modules</artifactId>
+        <artifactId>component-modules</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>svg-component-impl-modules</artifactId>
+    <artifactId>component-impl-modules</artifactId>
 
     <packaging>pom</packaging>
    
-    <name>SVG Component Implementations</name>
+    <name>Component Implementation Modules</name>
  
     <modules>
-        <module>svg-component</module>
-        <module>sample-svg-component</module>
+        <module>component</module>
+        <module>sample-component</module>
     </modules>
 
 </project>

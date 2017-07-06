@@ -4,21 +4,21 @@
     
     <parent>
         <groupId>pt.webdetails</groupId>
-        <artifactId>svg-component-assemblies</artifactId>
+        <artifactId>component-assemblies</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>svg-component-platform-plugin</artifactId>
+    <artifactId>component-platform-plugin</artifactId>
     <!-- <version>1.0</version> -->
 
     <packaging>pom</packaging>
     
-    <name>SVG Component Platform Plugin</name>
+    <name>Component Platform Plugin</name>
  
     <dependencies>
       <dependency>
         <groupId>pt.webdetails</groupId>
-        <artifactId>svg-component-impl</artifactId>
+        <artifactId>component-impl</artifactId>
         <version>1.0</version>
       </dependency>
     </dependencies>

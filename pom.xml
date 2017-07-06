@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pt.webdetails</groupId>
-    <artifactId>svg-component-modules</artifactId>
+    <artifactId>component-modules</artifactId>
     <version>1.0</version>
 
     <packaging>pom</packaging>
    
-    <name>SVG Component Modules</name>
+    <name>Component Modules</name>
 
     <properties>
         <component.name>svg-component-cdf</component.name>

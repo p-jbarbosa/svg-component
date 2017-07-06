@@ -4,11 +4,11 @@
     
     <parent>
         <groupId>pt.webdetails</groupId>
-        <artifactId>svg-component-assemblies</artifactId>
+        <artifactId>component-assemblies</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>svg-component-cde-dashboard</artifactId>
+    <artifactId>component-cde-dashboard</artifactId>
 
     <packaging>pom</packaging>
     
@@ -17,7 +17,7 @@
     <dependencies>
       <dependency>
         <groupId>pt.webdetails</groupId>
-        <artifactId>sample-svg-component-impl</artifactId>
+        <artifactId>sample-component-impl</artifactId>
         <version>1.0</version>
       </dependency>
     </dependencies>
