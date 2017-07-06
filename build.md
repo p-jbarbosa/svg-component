@@ -6,7 +6,8 @@ Release artifacts are created with [maven](https://maven.apache.org/) and upload
 
 ## Steps to create/update releases
 
-**READ BEFORE START** - new plugin artifacts will require update on svg component entry within marketplace.xml, to became available on Pentaho Marketplace.
+**BEFORE START**
+New plugin artifacts will require update on svg component entry within marketplace.xml, to became available on Pentaho Marketplace. You can achieve this by forking [Pentaho Marketplace project]() and making a pull request to the project.
 
 If you want to perform a new plugin release, or update one that is still on draft, please follow this steps:
 
