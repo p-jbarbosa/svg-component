@@ -17,8 +17,8 @@ If you want to perform a new plugin release, or update one that is still on draf
 1. Go to project's root on your machine.
 1. Run mvn package - this will read pom.xml on the project's root and start to create the new release artifacts.
 1. Upload the generated artifacts to project's release on github. You can find them here:
-  * assemblies/cde-dashboard/target/sample-svg-component.zip;
-  * assemblies/platform-plugin/target/svg-component-cdf.zip.
+  1. assemblies/cde-dashboard/target/sample-svg-component.zip;
+  1. assemblies/platform-plugin/target/svg-component-cdf.zip.
 1. Copy URLs to the new artifacts.
 1. Save and publish the release.
 1. Update marketplace.xml svg component entry with the URL obtained in the previous step.
