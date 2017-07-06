@@ -13,15 +13,31 @@ If you want to perform a new plugin release, or update one that is still on draf
 
 1. If you didn't clone already the project from github, go ahead.
 1. If you don't have maven already available on your machine, please install it. 
-1. Update the project's contents that lead you to perform this update/new release (if you don't know where to put these contents, please read section Plugin Structure).
+1. Update the project's contents that lead you to perform this update/new release (if you don't know where to put these contents, please read section Plugin File Structure).
 1. Go to project's root on your machine.
 1. Run mvn package - this will read pom.xml on the project's root and start to create the new release artifacts.
 1. Upload the generated artifacts to project's release on github. You can find them here:
-  1. assemblies/cde-dashboard/target/sample-svg-component.zip;
-  1. assemblies/platform-plugin/target/svg-component-cdf.zip.
+    1. assemblies/cde-dashboard/target/sample-svg-component.zip;
+    1. assemblies/platform-plugin/target/svg-component-cdf.zip.
 1. Copy URLs to the new artifacts.
 1. Save and publish the release.
 1. Update marketplace.xml svg component entry with the URL obtained in the previous step.
 1. Finally, if you want to clean your target folder after this operation, please run mvn clean.
 
-## Plugin Structure
+## Plugin File Structure
+
+This plugin has a maven like structure. Contents are divided over two main directories:
+* *impl*, that holds all the implementation related files;
+* *assemblies*, where all the final artfacts are made available;
+
+Because this represents a CDE component we have two implementation paths: 
+* one that represents the component's code on /impl/component/src/main/javascript;
+* and another one that will make a sample available, on impl/sample-component/src/main/resources.
+
+This way, if you want to update the sample, or perform a code modification, you must update the files that lay on _impl_ folder.
+
+This contents will eventually be _assembled_ into the second main directory. The _assemblies_ directory keeps the same paths that we already saw on _impl_:
+* platform-plugin, where we keep the remaining resources for component's final package, and where we will collect this final package;
+* cde-dashboard, where the final sample package will be available.
+
+
