@@ -22,7 +22,7 @@ This contents will eventually be _assembled_ into the second main directory. The
 
 To update the _assemblies_ directory you have to build the solution. 
 
-## Steps to create/update releases
+## Steps to build
 
 **BEFORE START**
 New releases imply new plugin artifacts. New plugin artifacts will require update on svg component entry within marketplace.xml, to became available on Pentaho Marketplace. You can achieve this by forking [Pentaho Marketplace project](https://github.com/pentaho/marketplace-metadata) and making a pull request to the project, after you have committed this changes.
