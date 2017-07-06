@@ -22,7 +22,7 @@ This contents will eventually be _assembled_ into the second main directory. The
 
 To update the _assemblies_ directory you have to build the solution. 
 
-There is a third directory that could be usefull in the future: _marketplace_assets_ keeps track on marketplace entry specific contents, like logo and screenshots.
+There is a third directory that could be usefull in the future: __marketplace_assets__ keeps track on marketplace entry specific contents, like logo and screenshots. If you need to change any of this elements, remember that for marketplace.xml should also be updated.
 
 ## Build
 
