@@ -7,18 +7,18 @@ Release artifacts are created with [maven](https://maven.apache.org/) and upload
 ## Plugin File Structure
 
 This plugin has a maven like structure. Contents are divided over two main directories:
-* *impl*, that holds all the implementation related files;
-* *assemblies*, where all the final artfacts are made available;
+* **impl**, that holds all the implementation related files;
+* **assemblies**, where all the final artfacts are made available;
 
 Because this represents a CDE component we have two implementation paths: 
 * one that represents the component's code on _/impl/component/src/main/javascript_;
 * and another one that represents the sample, on _impl/sample-component/src/main/resources_.
 
-This way, if you want to update the sample, or perform a code modification, you must update the files that lay on _impl_ folder.
+This way, if you want to update the sample, or perform a code modification, you must update the files that lay on **impl** folder.
 
 This contents will eventually be _assembled_ into the second main directory. The _assemblies_ directory keeps the same paths that we already saw on _impl_:
-* platform-plugin, where we keep the remaining resources for component's final package, and where we will collect this final package;
-* cde-dashboard, where the final sample package will be available.
+* **platform-plugin**, where we keep the remaining resources for component's final package, and where we will collect this final package;
+* **cde-dashboard**, where the final sample package will be available.
 
 To update the _assemblies_ directory you have to build the solution. 
 
