@@ -40,7 +40,7 @@
                   </goals>
                   <configuration>
                     <descriptor>src/main/assembly/assembly.xml</descriptor>
-                    <finalName>sample-svg-component</finalName>
+                    <finalName>${sample.filename}</finalName>
                     <classifier>zip</classifier>
                     <appendAssemblyId>false</appendAssemblyId>
                   </configuration>

@@ -13,6 +13,8 @@
     <properties>
         <component.name>svg-component-cdf</component.name>
         <component.folder>SvgComponent</component.folder>
+        <component.filename>svg-component-cdf</component.filename>
+        <sample.filename>sample-svg-component</sample.filename>
     </properties>
  
     <organization>

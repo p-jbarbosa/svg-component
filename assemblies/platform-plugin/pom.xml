@@ -41,7 +41,7 @@
                   </goals>
                   <configuration>
                     <descriptor>src/main/assembly/assembly.xml</descriptor>
-                    <finalName>svg-component-cdf</finalName>
+                    <finalName>${component.filename}</finalName>
                     <classifier>zip</classifier>
                     <appendAssemblyId>false</appendAssemblyId>
                   </configuration>
