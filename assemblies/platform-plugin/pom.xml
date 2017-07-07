@@ -9,7 +9,6 @@
     </parent>
 
     <artifactId>component-platform-plugin</artifactId>
-    <!-- <version>1.0</version> -->
 
     <packaging>pom</packaging>
     
