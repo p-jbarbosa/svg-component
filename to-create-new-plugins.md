@@ -36,9 +36,53 @@ To create your new component you will working on the following directories:
 
 Maven works through a set of pom.xml files, placed under all the important directories, that help to recreate a hierarchy of artifacts; and a set of _assembly.xml_ files that will tell how we want our package to be assembled.
 
-A simple configuration to meet your component requirements, using the same file structure that is created, on will need changes on the main **pom.xml**, under the project's root directory. Here you will find the next variables:
+A simple configuration on maven to meet your component requirements, using the same file structure that is created, will need changes on the main **pom.xml**, under the project's root directory. Here you will find the next variables to change:
 
-* component.name
-* component.folder
-* component.filename
-* sample.filename
+* **component.name**
+	* used to:
+		* name the component zip filename that will be upload to PUC;
+		* name the folder under the zip file;
+		* name the directory that will be shown on pentaho-server/pentaho-solutions/system/.
+	* used on:
+		* /assemblies/platform-plugin/src/main/assembly/assembly.xml
+		* /assemblies/platform-plugin/src/main/assembly/assembly.xml
+		* /assemblies/platform-plugin/src/main/resources/settings.xml
+		* /assemblies/platform-plugin/src/main/resources/settings.xml
+		* /assemblies/platform-plugin/src/main/resources/resources/components/require-js-cfg.js
+		* /assemblies/platform-plugin/src/main/resources/plugin.xml
+		* /assemblies/platform-plugin/src/main/resources/plugin.xml
+		* /assemblies/platform-plugin/src/main/resources/plugin.xml
+* **component.folder**
+	* used to: name the folder that will have the component code.
+	* used on:
+		* /assemblies/platform-plugin/src/main/assembly/assembly.xml
+		* /assemblies/platform-plugin/src/main/resources/resources/components/require-js-cfg.js
+* **component.filename**
+	* used to:
+		* name the component zip filename that will be upload to PUC.
+	* used on:
+		* /assemblies/platform-plugin/pom.xml
+* **sample.filename**
+	* used to: designate the sample zip folder name. 
+	* used on:
+		* /assemblies/cde-dashboard/pom.xml
+
+### Special tag Version
+
+The current plugin version is also controlled within pom.xml files. 
+
+For Pentaho Marketplace be able to control the current installed version (and branch), versus the new versions available, we need to make sure that the version stated on the component's entry in marketplace.xml is the same exposed on component's **version.xml** file.
+
+To control this **version.xml** file (located in /assemblies/platform-plugin/src/main/resources/_) is aware of a global maven variable, called **version**.
+
+When you need to create a new component version this files should be changed (use allways the same number):
+
+* /pom.xml
+* /impl/pom.xml
+* /impl/component/pom.xml
+* /impl/sample-component/pom.xml
+* /assemblies/pom.xml
+* /assemblies/platform-plugin/pom.xml
+* /assemblies/platform-plugin/pom.xml
+* /assemblies/cde-dashboard/pom.xml
+* /assemblies/cde-dashboard/pom.xml
