@@ -17,19 +17,19 @@ Because this represents a CDE component we have two implementation paths:
 This way, if you want to update the sample, or perform a code modification, you must update the files that lay on **impl** folder, choosing the correct sub-folder path.
 
 This contents will eventually be _assembled_ into the second main directory, to create new artifacts for releases. 
-The _assemblies_ directory keeps the same paths that we built for _impl_:
-* **platform-plugin**, where we keep the remaining resources for component's final package, and where we will collect his final package for release purposes;
-* **cde-dashboard**, where the final sample package will be available.
+The **assemblies** directory keeps the same paths that we built for _impl_:
+* **assemblies/platform-plugin**, keeps the remaining resources for component's final package, and the final package for release purposes;
+* **assemblies/cde-dashboard**, is where the final sample package will be available.
 
-To update the _assemblies_ directory you have to build the solution. 
+To update the _assemblies_ directory, and produce the .zip files to release, you have to build the solution. 
 
-There is a third directory that could be usefull in the future: __marketplace_assets__ keeps track on marketplace entry specific contents, like logo and screenshots. If you need to change any of this elements, remember that marketplace.xml should also be updated to reflect your changes.
+There is a third directory that could be usefull in the future: __marketplace_assets__ keeps track on marketplace entry specific contents, like his logo and sample screenshots. If you need to change any of this elements, remember that marketplace.xml should also be updated to reflect your changes.
 
 ### Add new version
 
 If you are creating a new component release you problably want to change the component version - bear in mind that for Pentaho Marketplace be able to control the current installed version (and branch), versus the new versions available, we need to make sure that the version stated on the component's entry in marketplace.xml is the same exposed on component's **version.xml** file.
 
-To automatize this behaviour, we added the control to maven. So, you need to update the followin pom files:
+To automatize this behaviour, we added the control to maven. So, you need to update the followin pom files, with the new version value:
 
 * /pom.xml
 * /impl/pom.xml
@@ -49,7 +49,7 @@ New releases imply new plugin artifacts. New plugin artifacts will require updat
 
 ### Steps to build 
 
-If you want to perform a new plugin release, please follow this steps:
+If you want to perform a new plugin release, please follow these steps:
 
 1. If you didn't clone already the project from github, go ahead.
 1. If you don't have maven already available on your machine, please install it. 
